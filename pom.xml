@@ -3,26 +3,26 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.410</version><!-- which version of Jenkins is this plugin built against? -->
+    <version>1.580.1</version><!-- which version of Jenkins is this plugin built against? -->
   </parent>
 
-  <groupId>jenkinsci.plugins.pmccabe</groupId>
+  <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>pmccabe</artifactId>
   <version>0.3</version>
   <packaging>hpi</packaging>
 
-  <!-- get every artifact through maven.glassfish.org, which proxies all the artifacts that we need -->
+  <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
   <repositories>
     <repository>
-      <id>m.g.o-public</id>
-      <url>http://maven.glassfish.org/content/groups/public/</url>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
-      <id>m.g.o-public</id>
-      <url>http://maven.glassfish.org/content/groups/public/</url>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
   <name>Jenkins PMcCabe Plug-in</name>
